@@ -6,65 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexandre Tondina</title>
     <style>
+
         html {
             font-family: 'Times', sans-serif;
         }
 
-        a {
-            display: block;
-        }
-
-        p {
+        p,
+        span {
             margin: 0;
+            padding: 0;
         }
 
-        /* img {
-            width: 150px;
-            height: auto;
-        } */
-
-        @media (max-width: 279px) {
-            img {
-                width: 100px;
-            }
+        a {
+            text-decoration: none;
         }
 
-        @media (min-width: 280px) and (max-width: 325px) {
-            img {
-                width: 120px;
-            }
+        td {
+            padding-left: 15px;
+        } 
+
+        tr:nth-child(1) > td:nth-child(1){
+            padding-left: 0;
+        }
+
+        tr:nth-child(1) > td:nth-child(2){
+            font-size: 19px;
+        }
+
+        tr:nth-child(2) > td{
+            font-size: 15px; 
+            line-height: 15px;
+            color: #bd3336;
+            opacity: 0.8;
+        }
+
+        tr:nth-child(3) > td,
+        tr:nth-child(4) > td,
+        tr:nth-child(5) > td,
+        tr:nth-child(6) > td,
+        tr:nth-child(7) > td,
+        tr:nth-child(8) > td,
+        tr:nth-child(9) > td,
+        tr:nth-child(10) > td,
+        tr:nth-child(11) > td {
+            font-size: 12px;
+            line-height: 12px;
+            color: #bd3336;
+            opacity: 0.8;
+        }
+
+        tr:nth-child(8) > td,
+        tr:nth-child(9) > td,
+        tr:nth-child(10) > td,
+        tr:nth-child(11) > td {
+            line-height: 12px;
         }
     </style>
 </head>
 
 <body>
-    <div style="margin-bottom: 10px;">
-        <a style="display: inline-block; vertical-align: super;" href="https://www.reiser-anne.ch">
-            <img src="https://raw.githubusercontent.com/colorzchdev/sign_AR/main/svg/Logo_FR.png" alt="logo" style="width: 30px; display: inline-block;" width="30px">
-        </a>
-        <div style="border-left: 2px solid #bd3336; padding-left: 12px; display: inline-block;">
-            <p style="font-weight: 400; font-size: 19px;">Alexandre Tondina</p>
-            <p style="font-weight: 400; padding-bottom: 2px; color: #bd3336; font-size: 15px; opacity: 0.8;">Avocat-stagiaire</p>
-            <p style="font-weight: 400; padding-bottom: 8px; color: #bd3336; font-size: 12px; opacity: 0.8;">Étude de Me Anne Reiser</p>
-            <p style="color: #bd3336; font-size: 12px; opacity: 0.8;">Rue de Saint-Léger 2</p>
-            <p style="color: #bd3336; font-size: 12px; opacity: 0.8;">1205 Genève</p>
-            <p style="padding-bottom: 8px; color: #bd3336; font-size: 12px; opacity: 0.8;">Suisse</p>
-            <p>
-                <a href="tel:+41228073367" style="text-decoration: none; color: #bd3336; font-size: 12px; opacity: 0.8;">Tél: +41 22 807 33 67</a>
-            </p>
-            <p>
-                <a href="fax:+41228073363" style="text-decoration: none; color: #bd3336; font-size: 12px; opacity: 0.8;">Fax: +41 22 807 33 63</a>
-            </p>
-            <p>
-                <a href="mailto:a.tondina@reiser-anne.ch" style="text-decoration: none; color:#bd3336; font-size: 12px; opacity: 0.8;">a.tondina@reiser-anne.ch</a>
-            </p>
-            <p>
-                <a href="https://www.reiser-anne.ch" style="text-decoration: none; color: #bd3336; font-size: 12px; opacity: 0.8;">www.reiser-anne.ch</a>
-            </p>
-        </div>
-    </div>
+    <div dir="auto">
+        <table cellspacing="0" cellpadding="0" style="border-spacing: 0;">
+            <tbody>
+                <tr>
+                    <td rowspan="11" style="border-right: 2px solid #bd3336;">
+                        <a style="display: block;" href="https://www.reiser-anne.ch">
+                            <img src="https://raw.githubusercontent.com/colorzchdev/sign_AR/main/svg/Logo_FR.png" alt="logo" style="width: 190px;" width="190">
+                        </a>
+                    </td>
+                    <td style= "font-weight: 400; height: 20px;">Alexandre Tondina</td>
+                </tr>
+                <tr style="height: 15px;">
+                    <td style="font-weight: 400; color: #bd3336">Avocat-stagiaire</td>
+                </tr>
+                <tr style="height: 12px;">
+                    <td style="font-weight: 400; padding-bottom: 8px; color: #bd3336">Étude de Me Anne Reiser</td>
+                </tr>
+                <tr style="height: 12px !important; color: #bd3336">
+                    <td>Rue de Saint-Léger 2</td>
+                </tr>
+                <tr style="height: 12px !important;">
+                    <td style="color: #bd3336">1205 Genève</td>
+                </tr>
+                <tr style="height: 12px;">
+                    <td style="padding-bottom: 8px; color: #bd3336">Suisse</td>
+                </tr>
 
-    <p style="font-size: 8px;">Le contenu de ce courriel et de ses annexes est à l’intention exclusive de la personne à
+                <tr style="height: 12px !important;">
+                    <td><a href="tel:+41228073367" style="text-decoration: none; color: #bd3336">Tél: +41 22 807 33 67</a></td>
+                </tr>
+                <tr style="height: 12px !important;">
+                    <td><a href="fax:+41228073363" style="text-decoration: none; color: #bd3336">Fax: +41 22 807 33 63</a></td>
+                </tr>
+                <tr style="height: 12px !important;">
+                    <td style="height: 12px"><a href="mailto:a.tondina@reiser-anne.ch" style="text-decoration: none; color:#bd3336; height: 12px;">a.tondina@reiser-anne.ch</a></td>
+                </tr>
+                <tr style="height: 12px !important;">
+                    <td style="height: 12px"><a href="https://www.reiser-anne.ch" style="text-decoration: none; color: #bd3336; height: 12px;">www.reiser-anne.ch</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p style="font-size: 8px; margin-top: 10px;">Le contenu de ce courriel et de ses annexes est à l’intention exclusive de la personne à
         laquelle il est adressé, et peut contenir des informations confidentielles et/ou protégées par le secret
         professionnel de l’avocat. Si vous recevez ce message et ses éventuelles annexes par erreur, il est illicite et
         strictement interdit de le garder, de le faire suivre ou de le copier tant de manière partielle que totale.
